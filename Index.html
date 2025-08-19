@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Navis Games V3</title>
+  <title>Navis Games V3 (Beta) </title>
   <style>
     body, html {
       margin: 0;
@@ -33,15 +33,22 @@
       left: 20px;
       display: flex;
       flex-direction: column;
-      gap: 25px;
+      gap: 35px;
       z-index: 2;
     }
 
     .game {
       display: flex;
+      align-items: flex-start;
+      gap: 40px;
+      text-decoration: none;
+    }
+
+    .icon-wrapper {
+      display: flex;
       flex-direction: column;
       align-items: center;
-      text-decoration: none;
+      gap: 8px;
     }
 
     .icon-box {
@@ -70,14 +77,14 @@
     }
 
     .label {
-      margin-top: 8px;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: bold;
       color: white;
       text-shadow:
         0 0 6px rgba(255, 255, 255, 0.9),
         0 0 12px rgba(255, 255, 255, 0.8),
         0 0 24px rgba(255, 255, 255, 0.7);
+      text-align: center;
     }
 
     canvas#snow {
@@ -94,41 +101,74 @@
 <body>
   <canvas id="snow"></canvas>
 
-  <h1 class="title">Navis Games V3 (Beta1.0)
-  </h1>
+  <h1 class="title">Navis Games V3 (Beta 1.0)</h1>
 
   <div class="icon-container">
-    <!-- Balatro -->
-    <a class="game" href="https://game.randplays.com/balatro-online/index.html?v=1" target="_blank">
-      <div class="icon-box">
-        <img src="https://cdn2.steamgriddb.com/icon/066e25a0712b306a9b95230f6ec4a051.ico" alt="Balatro Icon">
-      </div>
-      <div class="label">Balatro</div>
-    </a>
 
     <!-- Geometry Dash -->
-    <a class="game" href="https://azgames.io/geometry-dash.embed" target="_blank">
-      <div class="icon-box">
-        <img src="https://m.media-amazon.com/images/I/61mVIP6Oo1L.png" alt="Geometry Dash Icon">
+    <div class="game">
+      <div class="icon-wrapper">
+        <a class="icon-box" href=https://azgames.io/geometry-dash.embed" target="_blank">
+          <img src="https://lh5.googleusercontent.com/t4Fbh5YuSHOQlociWV0rO2PlMN3XJxy8eMrqeqNCdTrZ5lPHtzSlLAijm4G5lBYTiBX_FpUn6mXj6CSPEcPaWRz3jthIURbsckWYmmFnrgHjc8ZTrLs8Y7tHHHyRoRisF3nN6jcz0Qg=w1280" alt="Geometry Dash">
+        </a>
+        <div class="label">Geometry Dash</div>
       </div>
-      <div class="label">Geometry Dash</div>
-    </a>
+      <div class="icon-wrapper">
+        <a class="icon-box" href="https://azgames.io/drift-hunters.embed" target="_blank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzXAsHGMgY86yJR_xgQkNIOaStkpNgY0jIRw&s" alt="Geometry Dash">
+        </a>
+        <div class="label">Drift Hunters</div>
+      </div>
+    </div>
+
+    <!-- Balatro -->
+    <div class="game">
+      <div class="icon-wrapper">
+        <a class="icon-box" href="https://game.randplays.com/balatro-online/index.html?v=1" target="_blank">
+          <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/246930ec-f255-4d2d-ab3b-ffe775a6f445/distzie-61a55337-a965-471b-9417-f27013775f65.png/v1/fill/w_512,h_512/balatro_icon_by_ryangl80_distzie-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvMjQ2OTMwZWMtZjI1NS00ZDJkLWFiM2ItZmZlNzc1YTZmNDQ1XC9kaXN0emllLTYxYTU1MzM3LWE5NjUtNDcxYi05NDE3LWYyNzAxMzc3NWY2NS5wbmciLCJ3aWR0aCI6Ijw9NTEyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.h4WJRHCTwD0qk-kuUgcnSlzOLHkutyWb27x_IMFdQ4w" alt="Balatro">
+        </a>
+        <div class="label">Balatro</div>
+      </div>
+      <div class="icon-wrapper">
+        <a class="icon-box" href="https://legalizenuclearbombs5.github.io/games/Tiny%20Fishing" target="_blank">
+          <img src="https://cdn-1.webcatalog.io/catalog/poki-tiny-fishing/poki-tiny-fishing-icon-filled-256.webp?v=1714780137064" alt="Balatro">
+        </a>
+        <div class="label">Tiny Fishing</div>
+      </div>
+    </div>
 
     <!-- Monkey Mart -->
-    <a class="game" href="https://monkey-martgame.github.io/file/" target="_blank">
-      <div class="icon-box">
-        <img src="https://monkeymartgame.org//data/image/game/monkey-mart-game-image.jpg" alt="Monkey Mart Icon">
+    <div class="game">
+      <div class="icon-wrapper">
+        <a class="icon-box" href="https://monkey-martgame.github.io/file/" target="_blank">
+          <img src="https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=204,height=204,fit=cover,f=auto/ce4a204b6d2cc99d1879da0b2282b0d8/monkey-mart.png" alt="Monkey Mart">
+        </a>
+        <div class="label">Monkey Mart</div>
       </div>
-      <div class="label">Monkey Mart</div>
-    </a>
+      <div class="icon-wrapper">
+        <a class="icon-box" href="https://eaglercraft.com/mc/1.8.8" target="_blank">
+          <img src="https://cdn2.steamgriddb.com/icon_thumb/0a17ad0fa0870b05f172deeb05efef8e.png" alt="Monkey Mart">
+        </a>
+        <div class="label">Monkey Mart</div>
+      </div>
+    </div>
 
     <!-- Escape Road -->
-    <a class="game" href="https://game.azgame.io/escape-road-2/" target="_blank">
-      <div class="icon-box">
-        <img src="https://azgames.io/upload/imgs/escaperoad.png" alt="Escape Road Icon">
+    <div class="game">
+      <div class="icon-wrapper">
+        <a class="icon-box" href="https://azgames.io/upload/imgs/escaperoad.png" target="_blank">
+          <img src="https://azgames.io/upload/imgs/escaperoad.png" alt="Escape Road">
+        </a>
+        <div class="label">Escape Road</div>
       </div>
-      <div class="label">Escape Road</div>
-    </a>
+      <div class="icon-wrapper">
+        <a class="icon-box" href="https://usecosmic.github.io/games/Driftboss/index.html" target="_blank">
+          <img src="https://cdn.now.gg/apps-content/com.nowgg.h5.pub474.app50005/icon/drift-boss.png" alt="Escape Road">
+        </a>
+        <div class="label">Escape Road</div>
+      </div>
+    </div>
+
   </div>
 
   <script>
@@ -188,4 +228,3 @@
   </script>
 </body>
 </html>
-
